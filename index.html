@@ -7,7 +7,12 @@
 
   <style TYPE="text/css">
   body,table {font-family:helvetica; font-size:1.1em;}
-  body {width:53em; margin-left:1.5em;}
+  //body {width:53em; margin-left:1.5em;}
+
+  #wrap { 
+    width: 65em; 
+    margin: 0 auto; 
+  }
 
   a:link {
     color: #4174a0;
@@ -22,6 +27,8 @@
 </head>
 
 <body>
+
+<div id="wrap">
 
   <table width="100%" cellpadding="0" cellspacing="0">
     <tr>
@@ -62,7 +69,8 @@
 <p>
 I am a Research Scientist/Researcher-in-Residence as part of the 
 <a href="http://visual.stanford.edu/">Intel Science and Technology
-  Center for Visual Computing</a> (ISTC-VC) and an Affiliate Professor
+  Center for Visual Computing</a> (ISTC-VC).
+I also have a courtesy Affiliate Professor appointment
   in the <a href="http://www.cs.washington.edu">Department of Computer Science & Engineering</a> at the <a href="http://www.washington.edu">University of Washington</a>. 
 </p>
 
@@ -74,20 +82,10 @@ recognition.
 More recently, I am interested in cross-domain matching and
 alignment of historical architectural paintings to 3D models
 constructed from photographs.
-<!--
-My research interests are primarily in computer vision.
-I am particularly interested in scene understanding and object
-recognition, with emphasis on reasoning about 3D geometry and
-large-scale data.
--->
 </p>
 
   <p>
 <b>Bio</b>:
-<!--
-I am a Research Scientist in the <a href="http://www.cs.washington.edu/">Department of Computer Science &
-Engineering</a> at the <a href="http://www.washington.edu/">University of Washington</a>.
--->
 I received my Ph.D. from <a href="http://mit.edu">MIT</a> in the <a href="http://www.csail.mit.edu">Computer Science and Artificial
 Intelligence Laboratory</a> in 2008 under the supervision of Professors
 <a href="http://people.csail.mit.edu/billf/">William T. Freeman</a> and
@@ -99,15 +97,15 @@ Paris, France.
 
   <hr />
 
+<!--
   <font style="font-size:1.7em;">
   News
   </font>
 
 <br /><br />
-I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvpr2013-bottlenecks">panel discussion on computational bottlenecks</a> at CVPR 2013.
-</p>
 
   <hr />
+-->
 
 <br />
 
@@ -124,11 +122,20 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
   <table style="border-spacing:0em 2em;">
 
   <tr>
+  <td><img src="thumbs/siggraphasia2013.jpg" style="width:19em;" />&nbsp;&nbsp;&nbsp;</td>
+  <td>
+  <a href="http://grail.cs.washington.edu/projects/label3d">3D Wikipedia: Using Online Text to Automatically Label and Navigate Reconstructed Geometry</a>
+  <br />Bryan C. Russell, Ricardo Martin-Brualla, Daniel J. Butler, Steven M. Seitz, and Luke Zettlemoyer
+  <br />ACM Transactions on Graphics (SIGGRAPH Asia 2013), Vol. 32, No. 6.
+  </td>
+  </tr>
+
+  <tr>
   <td><img src="thumbs/nips2012_thumb_v2.jpg" style="width:19em;" />&nbsp;&nbsp;&nbsp;</td>
   <td>
   <a href="http://sunprimitive.csail.mit.edu">Localizing 3D Cuboids in Single-view Images</a>
-  <br />J. Xiao, B. C. Russell, and A. Torralba
-  <br />Advances in Neural Information Processing Systems (NIPS), 2012
+  <br />Jianxiong Xiao, Bryan C. Russell, and Antonio Torralba
+  <br />Advances in Neural Information Processing Systems (NIPS), 2012.
   </td>
   </tr>
 
@@ -136,114 +143,63 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
   <td><img src="thumbs/3drr2011_thumb_v4.jpg" style="width:19em;" />&nbsp;&nbsp;&nbsp;</td>
   <td>
   <a href="http://www.di.ens.fr/willow/research/paintingalignment">Automatic Alignment of Paintings and Photographs Depicting a 3D Scene</a>
-  <br />B. C. Russell, J. Sivic, J. Ponce, and H. Dessales
+  <br />Bryan C. Russell, Josef Sivic, Jean Ponce, and H&eacute;l&egrave;ne Dessales
   <br />3rd International IEEE Workshop on 3D Representation for
-  Recognition (3dRR-11), associated with ICCV 2011. <!-- (<a href="papers/3drr2011.pdf">PDF</a>) -->
+  Recognition (3dRR-11), 
+  <br />associated with ICCV 2011.
   </td>
   </tr>
-
-<!--
-  <tr>
-  <td><img src="thumbs/labelmeApplications10.jpg" style="height:5em;" /></td>
-  <td>
-  <a href="http://labelme.csail.mit.edu">LabelMe: Online Image Annotation and Applications</a>
-  <br />A. Torralba, B. C. Russell, and J. Yuen
-  <br />Proceedings of the IEEE, 98(8):1467-1484, 2010. (<a href="papers/labelmeApplications.pdf">PDF</a>)
-  </td>
-  </tr>
--->
 
   <tr>
   <td><img src="thumbs/nips09_b.jpg" style="width:19em;" /></td>
   <td>
 <a href="projects/SceneComposites/index.html">Segmenting Scenes by Matching Image Composites</a>
-<br />B. C. Russell, A. A. Efros, J. Sivic, W. T. Freeman, and A. Zisserman
+<br />Bryan C. Russell, Alexei A. Efros, Josef Sivic, William T. Freeman, and Andrew Zisserman
 <br />Advances in Neural Information Processing Systems (NIPS),
-2009. <!-- (<a href="papers/nips2009.pdf">PDF</a>) -->
+2009.
   </td>
   </tr>
 
   <tr>
   <td><img src="thumbs/ICCV-LabelMeVideo.jpg" style="height:6em;" /></td>
-<!--  <td style="width:5em;" /> -->
   <td>
-<a href="http://labelme.csail.mit.edu/VideoLabelMe">LabelMe video: Building a Video Database with Human Annotations</a>
-<br />J. Yuen, B. C. Russell, C. Liu, and A. Torralba
+<!-- <a href="http://labelme.csail.mit.edu/VideoLabelMe">LabelMe video: Building a Video Database with Human Annotations</a> -->
+<a href="papers/LabelMeVideo.pdf">LabelMe video: Building a Video Database with Human Annotations</a>
+<br />Jenny Yuen, Bryan C. Russell, Ce Liu, and Antonio Torralba
 <br />IEEE International Conference on Computer Vision (ICCV),
 2009. 
-<br /><a href="http://labelme.csail.mit.edu/VideoLabelMe/VLMVideoCapturingOnline/uploadVideo.html">Video collection challenge</a>
+<!-- <br /><a href="http://labelme.csail.mit.edu/VideoLabelMe/VLMVideoCapturingOnline/uploadVideo.html">Video collection challenge</a> -->
 <!-- (<a href="papers/LabelMeVideo.pdf">PDF</a> | <a href="http://labelme.csail.mit.edu/VideoLabelMe/VLMVideoCapturingOnline/uploadVideo.html">Video collection challenge</a>) -->
   </td>
   </tr>
 
-<!--
   <tr>
-  <td />
-  <td>
-  <a href="http://people.csail.mit.edu/torralba/publications/labelmeApplications.pdf">LabelMe: online image annotation and applications</a>
-  <br />A. Torralba, B. C. Russell, and J. Yuen
-  <br />MIT CSAIL Technical Report, 2009.
-  </td>
-  </tr>
--->
-
-  <tr>
-  <td><img src="thumbs/LabelMe3D.jpg" style="height:6em;" /></td>
+  <td><img src="thumbs/LabelMe3D_v02.jpg" style="width:19em;" /></td>
   <td>
   <a href="http://labelme.csail.mit.edu/Release3.0/browserTools/php/labelme3d_toolbox.php">LabelMe3D: Building a Database of 3D Scenes from User Annotations</a>
-  <br />B. C. Russell and A. Torralba
+  <br />Bryan C. Russell and Antonio Torralba
   <br />IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR), 2009. 
-<!--  <br /><a href="http://labelme.csail.mit.edu/LabelMe3D/labelme3D.html">Online demo</a> -->
-<!--  (<a href="papers/LabelMe3D.pdf">PDF</a> | <a href="http://people.csail.mit.edu/brussell/research/LabelMe3D/LabelMe3dDownload.html">LabelMe3D database</a> | <a href="http://people.csail.mit.edu/brussell/research/LabelMe3D/LabelMe3dToolbox/index.html">source code</a>) -->
   </td>
   </tr>
-
-<!--
-  <tr>
-  <td><img src="thumbs/LabelMe3D.jpg" style="height:6em;" /></td>
-  <td>
-  <a href="http://labelme.csail.mit.edu/LabelMe3D/labelme3D.html">Building a Database of 3D Scenes
-  from User Annotations</a>
-  <br />B. C. Russell and A. Torralba
-  <br />IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR), 2009. 
-  <br /><a href="http://people.csail.mit.edu/brussell/research/LabelMe3D/LabelMe3dDownload.html">LabelMe3D database</a> | <a href="http://people.csail.mit.edu/brussell/research/LabelMe3D/LabelMe3dToolbox/index.html">source code</a>
-  </td>
-  </tr>
--->
 
   <tr>
   <td><img src="thumbs/labelme.jpg" style="height:6em;" /></td>
   <td>
-  <a href="http://labelme.csail.mit.edu">LabelMe: a Database and Web-based Tool for Image Annotation</a>
-  <br />B. C. Russell, A. Torralba, K. P. Murphy, W. T. Freeman
+  <a href="http://labelme.csail.mit.edu">LabelMe: A Database and Web-based Tool for Image Annotation</a>
+  <br />Bryan C. Russell, Antonio Torralba, Kevin P. Murphy, and William T. Freeman
   <br />International Journal of Computer Vision, 77(1-3):157-173,
   2008.
-  <!-- (<a href="http://people.csail.mit.edu/brussell/research/AIM-2005-025-new.pdf">PDF</a>) -->
   </td>
   </tr>
-
-<!--
-  <tr>
-  <td><img src="thumbs/sivic08_2.jpg" style="height:5em;" /></td>
-  <td>
-  Unsupervised Discovery of Visual Object Class Hierarchies
-  <br />J. Sivic, B. C. Russell, A. Zisserman, W. T. Freeman, and A. A. Efros.
-  <br />IEEE Conference on Computer Vision and Pattern Recognition
-  (CVPR), 2008. (<a href="papers/Sivic08.pdf">PDF</a>)
-  </td>
-  </tr>
--->
 
   <tr>
   <td><img src="thumbs/russell07.jpg" style="height:6em;" /></td>
   <td>
   <a href="projects/recognitionBySceneAlignment/index.html">Object Recognition by Scene Alignment</a>
-  <br />B. C. Russell, A. Torralba, C. Liu, R. Fergus, W. T. Freeman
+  <br />Bryan C. Russell, Antonio Torralba, Ce Liu, Rob Fergus, and William T. Freeman
   <br />Advances in Neural Information Processing Systems (NIPS),
   2007.
-  <!-- (<a href="papers/nipsRecognitionBySceneAlignment07.pdf">PDF</a>) -->
   </td>
   </tr>
 
@@ -251,11 +207,10 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
   <td><img src="thumbs/russell06.jpg" style="height:6em;" /></td>
   <td>
   <a href="projects/mult_seg_discovery/index.html">Using Multiple Segmentations to Discover Objects and their Extent in Image Collections</a>
-  <br />B. C. Russell, A. A. Efros, J. Sivic, W. T. Freeman, and
-  A. Zisserman.
+  <br />Bryan C. Russell, Alexei A. Efros, Josef Sivic, William T. Freeman, and
+  Andrew Zisserman
   <br />IEEE Conference on Computer Vision and Pattern Recognition
   (CVPR), 2006.
-  <!-- (<a href="papers/Russell06.pdf">PDF</a>) -->
   </td>
   </tr>
 
@@ -263,9 +218,9 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
   <td><img src="thumbs/words_seg.jpg" style="height:6em;" /></td>
   <td>
   <a href="http://www.ri.cmu.edu/publication_view.html?pub_id=5237">Discovering Objects and their Location in Images</a>
-  <br />J. Sivic, B. C. Russell, A. A. Efros, A. Zisserman, W. T. Freeman
+  <br />Josef Sivic, Bryan C. Russell, Alexei A. Efros, Andrew
+  Zisserman, and William T. Freeman
   <br />International Conference on Computer Vision (ICCV), 2005.
-  <!-- (<a href="papers/Sivic05.pdf">PDF</a>) -->
   </td>
   </tr>
 
@@ -279,6 +234,9 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
 
   <ul>
     <li>
+      CVPR 2013: <a href="https://www.intel-university-collaboration.net/cvpr2013-bottlenecks">Intel sponsored panel discussion on computational bottlenecks in computer vision</a>
+    </li>
+    <li>
       Spring
       2012: <a href="http://www.cs.washington.edu/education/courses/cse590v/12sp/">CSE 590V: Computer vision seminar</a>
     </li>
@@ -290,68 +248,8 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
   </ul>
 
   <br />
-  
 
-<!--
-<hr />
-
-<font style="font-size:1.7em;">
-<p>Publications</p>
-</font>
--->
-
-<!--
-
-<p>
-  Labeling, Discovering, and Detecting Objects in Images
-  <br />B. C. Russell
-  <br />Doctoral Thesis, Massachusetts Institute of Technology,
-  2008. (<a href="papers/RussellThesis.pdf">PDF</a>)
-</p>
-
-<p>
-  Dataset Issues in Object Recognition
-  <br />J. Ponce, T. L. Berg, M. Everingham, D. A. Forsyth, M. Hebert,
-  S. Lazebnik, M. Marszalek, C. Schmid, B. C. Russell, A. Torralba,
-  C. K. I. Williams, J. Zhang, and A. Zisserman.
-  <br />In Toward Category-Level Object Recognition. Springer-Verlag Lecture
-  Notes in Computer Science, J. Ponce, M. Hebert, C. Schmid, and
-  A. Zisserman (eds.), 2006.
-  (<a href="http://www-cvr.ai.uiuc.edu/ponce_grp/publication/paper/sicily06c.pdf">PDF</a>)
-</p>
-
-<p>
-  Discovering object categories in image collections
-  <br />J. Sivic, B. C. Russell, A. A. Efros, A. Zisserman, W. T. Freeman
-  <br />MIT AI Lab Memo AIM-2005-005, February, 2005.
-  (<a href="papers/AIM-2005-005-new.pdf">PDF</a>)
-</p>
-
-<p>
-  Efficient Graphical Models for Processing Images
-  <br />M. F. Tappen, B. C. Russell, and W. T. Freeman
-  <br />IEEE Conference on Computer Vision and Pattern Recognition
-  (CVPR), 2004. 
-  (<a href="papers/Tappen04.pdf">PDF</a>)
-</p>
-
-<p>
-  Exploiting the sparse derivative prior for
-  super-resolution and image demosaicing
-  <br />M. F. Tappen, B. C. Russell, and W. T. Freeman
-  <br />3rd Intl. Workshop on Statistical and Computational Theories of
-  Vision (associated with ICCV), 2003.
-  (<a href="papers/Tappen03.pdf">PDF</a>)
-</p>
-
-<p>
-  Exploiting the Sparse Derivative Prior for Super-Resolution
-  <br />B. C. Russell
-  <br />Master's Thesis, Massachusetts Institute of Technology, 2003.
-  (<a href="papers/mthesis.pdf">PDF</a>)
-</p>
-
--->
+</div>  
 
 <!-- Site Meter -->
 <script type="text/javascript" src="http://s27.sitemeter.com/js/counter.js?site=s27russell">
@@ -361,18 +259,6 @@ I am co-organizing a <a href="https://www.intel-university-collaboration.net/cvp
 <img src="http://s27.sitemeter.com/meter.asp?site=s27russell" alt="Site Meter" border="0"/></a>
 </noscript>
 <!-- Copyright (c)2009 Site Meter -->
-
-<!--
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-606692-2");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
--->
 
 </body>
 
