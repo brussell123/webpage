@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>Using Multiple Segmentations to Discover Objects and their Extent in Image Collections</title>
+<style type="text/css">
+body {font-family: helvetica; width:60em; margin-left:1.5em;}
+A:link {text-decoration: underline; color: black}
+A:visited {text-decoration: underline; color: black}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; color: gray;}
+</style>
+  </head>
+
+  <body>
+    
+    <font size="6">Using Multiple Segmentations to Discover Objects
+    and their Extent in Image Collections</font>
+    </p>
+    <p>
+    <font size="5">
+<a href="homes.cs.washington.edu/~bcr" style="text-decoration:none;">Bryan C. Russell</a>, 
+<a href="http://www.cs.cmu.edu/~efros/" style="text-decoration:none;">Alexei A. Efros</a>, 
+<a href="http://www.di.ens.fr/~josef" style="text-decoration:none;">Josef Sivic</a>, 
+<a href="http://people.csail.mit.edu/billf" style="text-decoration:none;">William T. Freeman</a>, 
+<a href="http://www.robots.ox.ac.uk/~az" style="text-decoration:none;">Andrew Zisserman</a>
+</font>
+    </p>
+
+    <img src ="bannerNew.jpg" style="width:60em">
+
+    <p>
+Given a large dataset of images, we seek to automatically determine
+the visually similar object and scene classes together with their
+image segmentation. To achieve this we combine two ideas: (i) that a
+set of segmented objects can be partitioned into visual object classes
+using topic discovery models from statistical text analysis; and (ii)
+that visual object classes can be used to assess the accuracy of a
+segmentation. To tie these ideas together we compute multiple
+segmentations of each image and then: (i) learn the object classes; and
+(ii) choose the correct segmentations.  We demonstrate that such an
+algorithm succeeds in automatically discovering many familiar objects
+in a variety of image datasets, including those from Caltech, MSRC and
+LabelMe.
+    </p>
+
+    <br />
+    <p>
+    <b>Matlab code</b>
+    </p>
+
+    <p>
+Installation instructions
+</p>
+
+<p>
+1. Download the <a href="cvpr06_code_v02.tar.gz">code</a> and untar it.
+<br />2. Compile the ".cpp" files via the "mex" command in Matlab.
+<br />3. Download and install <a href="http://www.seas.upenn.edu/~timothee/software/ncut/ncut.html">Normalized Cuts</a>.
+<br />4. Download and unzip the Oxford interest point and descriptor
+binaries: <a href="OxfordVisualWordBinaries.tar.gz">OxfordVisualWordBinaries.tar.gz</a>.
+Note: these Linux binaries were provided by Krystian Mikolajczyk
+(while at the University of
+Oxford, now at University of Surrey) and George Matas (CTU
+Prague).  Newer versions of the binaries can be downloaded from the
+<a href="http://www.robots.ox.ac.uk/~vgg/research/affine/">Oxford Visual Geometry Group</a>.
+
+<br />5. Download and unzip the pre-computed visual word clusters: <a href="OxfordVisualWordClusters.tar.gz">OxfordVisualWordClusters.tar.gz</a>
+<br />6. Download the <a href="http://labelme.csail.mit.edu/LabelMeToolbox/index.html">LabelMe Matlab toolbox</a>.
+    </p>
+
+<p>
+Running the code
+</p>
+
+<p>
+The code is demonstrated in "demoLabelMe.m".  To run, adjust the
+global variables at the top of the script to point to the locations of
+the downloaded libraries, binaries, and pre-computed clusters above.
+Also, be sure to download the tested LabelMe <a href="Images.tar.gz">images</a> (and their corresponding <a href="Annotations.tar.gz">annotations</a>, which is used for validation).
+</p>
+
+    <br />
+    <p>
+    <b>Datasets</b>
+    </p>
+
+    <p>
+    We ran experiments on the following datasets:
+    </p>
+
+    <p><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech101/Caltech101.html">Caltech 5</a> (faces, motorcycles, airplanes,
+    faces, and Google background images)</p>
+
+    <p><a
+    href="http://research.microsoft.com/vision/cambridge/recognition/default.htm">Microsoft
+    Research Cambridge</a> (MSRC, set A)</p>
+
+    <p><a href="http://labelme.csail.mit.edu">LabelMe</a> (<a href="Images.tar.gz">Images.tar.gz</a>; <a href="Annotations.tar.gz">Annotations.tar.gz</a>)</p>
+
+    <br />
+    <p>
+    <b>Results</b>
+    </p>
+
+    <p>
+    <a href="caltech5_montages">Caltech 5 montages</a>
+    </p>
+
+    <p>
+    <a href="msrc_montages">MSRC montages</a>
+    </p>
+
+    <p>
+    <a href="labelme_montages">LabelMe montages</a>
+    </p>
+    
+    <!--
+    <p>
+    <a href="quantitative">Quantitative analysis</a>
+    </p>
+    -->
+
+    <br />
+    <p>
+    <b>Publication</b>
+    </p>
+
+    <p>
+    B. C. Russell, A. A. Efros, J. Sivic, W. T. Freeman,
+              and A. Zisserman, <i>Using Multiple Segmentations to
+              Discover Objects and their Extent in Image
+              Collections</i>, IEEE Conference on Computer Vision and
+              Pattern Recognition (CVPR), New York, New York, June,
+              2006. (Paper: <a href="Russell06.pdf">PDF</a>;
+              Poster: <a href="cvpr2006_poster.pdf">PDF</a>, <a href="cvpr2006_poster.ppt">PPT</a>)
+    </p>
+
+<center>
+<!-- Site Meter -->
+<script type="text/javascript" src="http://s20.sitemeter.com/js/counter.js?site=s20cvpr2006">
+</script>
+<noscript>
+<a href="http://s20.sitemeter.com/stats.asp?site=s20cvpr2006" target="_top">
+<img src="http://s20.sitemeter.com/meter.asp?site=s20cvpr2006" alt="Site Meter" border="0"/></a>
+</noscript>
+<!-- Copyright (c)2006 Site Meter -->
+</center>
+
+  </body>
+</html>
